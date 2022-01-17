@@ -9,12 +9,20 @@ body a {
 body ul {
   list-style: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   body .about-model {
     display: none;
   }
   body .about-text {
-    width: 100%;
+    width: 100% !important;
+  }
+}
+@media (max-width: 800px) {
+  body .dropdown {
+    display: block !important;
+  }
+  body .menu {
+    display: none;
   }
 }
 body header {
@@ -41,6 +49,12 @@ body header li a:hover {
   color: #FFF !important;
   font-weight: bold;
   transition: all ease 0.4s;
+}
+body header .dropdown {
+  display: none;
+  font-family: calibri;
+  text-transform: uppercase;
+  color: #6c707c;
 }
 body header .lang {
   color: #292929;

@@ -9,12 +9,20 @@ body{
     ul{
         list-style:none;
     }
-    @media (max-width:600px) {
+    @media (max-width:900px) {
         .about-model{
             display: none;
         }
         .about-text{
-            width: 100%;
+            width: 100% !important;
+        }
+    }
+    @media (max-width:800px) {
+        .dropdown{
+            display: block !important;
+        }
+        .menu{
+            display: none;
         }
     }
     header{
@@ -37,6 +45,12 @@ body{
         color:#FFF!important;
         font-weight: bold;
         transition: all ease 0.4s;
+        }
+        .dropdown{
+            display: none;
+            font-family: calibri;
+            text-transform: uppercase;
+            color:map-get($map: $colors, $key: secondary);
         }
         .lang{
             color:#292929;
